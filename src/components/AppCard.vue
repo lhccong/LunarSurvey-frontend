@@ -1,7 +1,12 @@
 <template>
-  <a-card class="appCard" hoverable @click="doCardClick">
+  <a-card
+    class="appCard"
+    style="border-radius: 12px"
+    hoverable
+    @click="doCardClick"
+  >
     <template #actions>
-      <!--      <span class="icon-hover"> <IconThumbUp /> </span>-->
+      <span class="icon-hover"> <IconThumbUp /> </span>
       <span class="icon-hover"> <IconShareInternal /> </span>
     </template>
     <template #cover>
