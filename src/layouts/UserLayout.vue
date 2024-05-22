@@ -3,7 +3,7 @@
     <a-layout style="height: 100vh">
       <a-layout-header class="header">
         <a-space>
-          <img class="logo" src="../assets/logo.png" />
+          <img class="logo" src="../assets/logo.jpg" />
           <div>🌙月亮勘探 AI 答题应用平台</div>
         </a-space>
       </a-layout-header>
