@@ -1,3 +1,4 @@
+// @ts-ignore
 /* eslint-disable */
 import request from '@/request';
 
@@ -101,7 +102,7 @@ export async function userLoginUsingPost(
   body: API.UserLoginRequest,
   options?: { [key: string]: any },
 ) {
-  return request<API.BaseResponseLoginUserVO_>('/api/user/login', {
+  return request<API.BaseResponseTokenLoginUserVo_>('/api/user/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
