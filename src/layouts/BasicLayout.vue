@@ -10,32 +10,7 @@
         </a-card>
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a-space>
-          <a-link
-            style="color: #848587; margin-right: 25px"
-            href="https://github.com/lhccong"
-          >
-            <template #icon>
-              <icon-github style="font-size: 20px" />
-            </template>
-            站长：程序员聪
-          </a-link>
-          <a-link
-            style="color: #848587; margin-right: 25px"
-            href="https://github.com/lhccong"
-          >
-            <template #icon>
-              <icon-exclamation-circle-fill style="font-size: 20px" />
-            </template>
-            关于本站
-          </a-link>
-          <a-link style="color: #848587" href=" https://github.com/lhccong">
-            <template #icon>
-              <icon-bug style="font-size: 20px" />
-            </template>
-            建议反馈
-          </a-link>
-        </a-space>
+        <PageFooter />
       </a-layout-footer>
     </a-layout>
   </div>
@@ -43,6 +18,7 @@
 
 <script setup lang="ts">
 import GlobalHeader from "@/components/GlobalHeader.vue";
+import PageFooter from "@/components/PageFooter.vue";
 </script>
 
 <style scoped>

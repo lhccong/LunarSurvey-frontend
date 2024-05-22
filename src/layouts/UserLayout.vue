@@ -7,19 +7,19 @@
           <div>🌙月亮勘探 AI 答题应用平台</div>
         </a-space>
       </a-layout-header>
-      <a-layout-content class="content">
+      <a-layout-content class="content" style="align-items: center">
         <router-view />
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://github.com/lhccong" target="_blank">
-          聪，一个喜欢捣鼓小玩意的程序员
-        </a>
+        <PageFooter />
       </a-layout-footer>
     </a-layout>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PageFooter from "@/components/PageFooter.vue";
+</script>
 
 <style scoped>
 #userLayout {
