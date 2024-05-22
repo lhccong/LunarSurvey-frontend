@@ -10,6 +10,14 @@ const myAxios = axios.create({
 // 全局请求拦截器
 myAxios.interceptors.request.use(
   function (config) {
+    // 从 localStorage 中获取 tokenName 和 tokenValue
+    const tokenName = localStorage.getItem("tokenName");
+    const tokenValue = localStorage.getItem("tokenValue");
+
+    // 如果 token 存在，则将 token 添加到请求的 headers 中
+    if (tokenName && tokenValue) {
+      config.headers[tokenName] = tokenValue;
+    }
     // Do something before request is sent
     return config;
   },
