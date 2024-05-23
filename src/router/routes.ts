@@ -165,8 +165,8 @@ export const routes: Array<RouteRecordRaw> = [
         component: UserRegisterPage,
       },
     ],
-    // meta: {
-    //   hideInMenu: true,
-    // },
+    meta: {
+      hideInMenu: true,
+    },
   },
 ];
