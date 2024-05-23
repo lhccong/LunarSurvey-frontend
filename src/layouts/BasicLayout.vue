@@ -5,7 +5,7 @@
         <GlobalHeader />
       </a-layout-header>
       <a-layout-content class="content">
-        <a-card style="border-radius: 8px; width: auto; height: 60vh">
+        <a-card style="border-radius: 8px; width: auto; height: 80vh">
           <router-view />
         </a-card>
       </a-layout-content>
