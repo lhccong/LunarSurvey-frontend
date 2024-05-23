@@ -101,14 +101,14 @@ export const routes: Array<RouteRecordRaw> = [
       access: ACCESS_ENUM.ADMIN,
     },
   },
-  // {
-  //   path: "/admin/app",
-  //   name: "应用管理",
-  //   component: AdminAppPage,
-  //   meta: {
-  //     access: ACCESS_ENUM.ADMIN,
-  //   },
-  // },
+  {
+    path: "/admin/app",
+    name: "应用管理",
+    component: AdminAppPage,
+    meta: {
+      access: ACCESS_ENUM.ADMIN,
+    },
+  },
   // {
   //   path: "/admin/question",
   //   name: "题目管理",
