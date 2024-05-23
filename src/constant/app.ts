@@ -9,7 +9,7 @@ export const REVIEW_STATUS_ENUM = {
 };
 
 // 审核状态映射
-export const REVIEW_STATUS_MAP = {
+export const REVIEW_STATUS_MAP: { [key: number]: string } = {
   0: "待审核",
   1: "通过",
   2: "拒绝",
@@ -24,7 +24,7 @@ export const APP_TYPE_ENUM = {
 };
 
 // 应用类型映射
-export const APP_TYPE_MAP = {
+export const APP_TYPE_MAP: { [key: number]: string } = {
   0: "得分类",
   1: "测评类",
 };
@@ -38,7 +38,7 @@ export const APP_SCORING_STRATEGY_ENUM = {
 };
 
 // 应用评分策略映射
-export const APP_SCORING_STRATEGY_MAP = {
+export const APP_SCORING_STRATEGY_MAP: { [key: number]: string } = {
   0: "自定义",
   1: "AI",
 };
