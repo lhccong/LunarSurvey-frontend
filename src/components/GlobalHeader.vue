@@ -23,7 +23,17 @@
     </a-col>
     <a-col flex="100px">
       <div v-if="loginUserStore.loginUser.id">
-        {{ loginUserStore.loginUser.userName ?? "无名" }}
+        <a-space>
+          <a-dropdown trigger="hover">
+            <a-avatar>
+              <img alt="avatar" :src="loginUserStore.loginUser.userAvatar" />
+            </a-avatar>
+            <template #content>
+              <a-doption>我的信息</a-doption>
+              <a-doption :onclick="logout">退出登录</a-doption>
+            </template>
+          </a-dropdown>
+        </a-space>
       </div>
       <div v-else>
         <a-button type="primary" href="/user/login">登录</a-button>
@@ -38,6 +48,7 @@ import { useRouter } from "vue-router";
 import { computed, ref } from "vue";
 import { useLoginUserStore } from "@/store/userStore";
 import checkAccess from "@/access/checkAccess";
+import { userLogoutUsingPost } from "@/api/userController";
 
 const loginUserStore = useLoginUserStore();
 
@@ -67,6 +78,12 @@ const visibleRoutes = computed(() => {
 const doMenuClick = (key: string) => {
   router.push({
     path: key,
+  });
+};
+const logout = () => {
+  userLogoutUsingPost();
+  router.push({
+    path: `/user/login`,
   });
 };
 </script>
