@@ -125,14 +125,14 @@ export const routes: Array<RouteRecordRaw> = [
       access: ACCESS_ENUM.ADMIN,
     },
   },
-  // {
-  //   path: "/admin/user_answer",
-  //   name: "回答管理",
-  //   component: AdminUserAnswerPage,
-  //   meta: {
-  //     access: ACCESS_ENUM.ADMIN,
-  //   },
-  // },
+  {
+    path: "/admin/user_answer",
+    name: "回答管理",
+    component: AdminUserAnswerPage,
+    meta: {
+      access: ACCESS_ENUM.ADMIN,
+    },
+  },
   // {
   //   path: "/noAuth",
   //   name: "无权限",
