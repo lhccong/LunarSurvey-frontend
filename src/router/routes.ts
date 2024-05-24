@@ -24,11 +24,11 @@ export const routes: Array<RouteRecordRaw> = [
     name: "主页",
     component: HomePage,
   },
-  // {
-  //   path: "/add/app",
-  //   name: "创建应用",
-  //   component: AddAppPage,
-  // },
+  {
+    path: "/add/app",
+    name: "创建应用",
+    component: AddAppPage,
+  },
   // {
   //   path: "/add/app/:id",
   //   name: "修改应用",
