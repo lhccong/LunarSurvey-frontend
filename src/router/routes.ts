@@ -56,15 +56,15 @@ export const routes: Array<RouteRecordRaw> = [
   //     hideInMenu: true,
   //   },
   // },
-  // {
-  //   path: "/app/detail/:id",
-  //   name: "应用详情页",
-  //   props: true,
-  //   component: AppDetailPage,
-  //   meta: {
-  //     hideInMenu: true,
-  //   },
-  // },
+  {
+    path: "/app/detail/:id",
+    name: "应用详情页",
+    props: true,
+    component: AppDetailPage,
+    meta: {
+      hideInMenu: true,
+    },
+  },
   // {
   //   path: "/answer/do/:appId",
   //   name: "答题",
