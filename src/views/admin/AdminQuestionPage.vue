@@ -191,11 +191,15 @@ const columns = [
     title: "创建时间",
     dataIndex: "createTime",
     slotName: "createTime",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: "更新时间",
     dataIndex: "updateTime",
     slotName: "updateTime",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: "操作",

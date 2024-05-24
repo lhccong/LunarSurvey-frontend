@@ -213,6 +213,8 @@ const columns = [
   {
     title: "描述",
     dataIndex: "appDesc",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: "图标",
@@ -242,6 +244,8 @@ const columns = [
     title: "审核时间",
     dataIndex: "reviewTime",
     slotName: "reviewTime",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: "审核人 id",
@@ -255,11 +259,15 @@ const columns = [
     title: "创建时间",
     dataIndex: "createTime",
     slotName: "createTime",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: "更新时间",
     dataIndex: "updateTime",
     slotName: "updateTime",
+    ellipsis: true,
+    tooltip: true,
   },
   {
     title: "操作",
