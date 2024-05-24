@@ -12,7 +12,7 @@
     <template #cover>
       <div
         :style="{
-          height: '204px',
+          height: '304px',
           overflow: 'hidden',
         }"
       >

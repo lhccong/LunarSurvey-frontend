@@ -27,6 +27,7 @@
   </a-form>
   <a-table
     :columns="columns"
+    column-resizable
     :data="dataList"
     :pagination="{
       showTotal: true,
@@ -272,6 +273,7 @@ const columns = [
   {
     title: "操作",
     slotName: "optional",
+    width: 150,
   },
 ];
 </script>

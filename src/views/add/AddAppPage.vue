@@ -1,9 +1,9 @@
 <template>
   <div id="addAppPage">
-    <h2 style="margin-bottom: 32px">创建应用</h2>
+    <h2 style="margin-bottom: 32px">🚀创建应用</h2>
     <a-form
       :model="form"
-      :style="{ width: '480px' }"
+      :style="{ width: '480px', marginLeft: '140px', marginTop: '120px' }"
       label-align="left"
       auto-label-width
       @submit="handleSubmit"

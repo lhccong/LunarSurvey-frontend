@@ -32,10 +32,7 @@ import PageFooter from "@/components/PageFooter.vue";
 
 #basicLayout .content {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 28px;
-  padding: 20px;
+  padding: 40px 160px;
   background: linear-gradient(to right, #fefefe, #fff);
 }
 
