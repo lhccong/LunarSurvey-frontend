@@ -117,14 +117,14 @@ export const routes: Array<RouteRecordRaw> = [
       access: ACCESS_ENUM.ADMIN,
     },
   },
-  // {
-  //   path: "/admin/scoring_result",
-  //   name: "评分管理",
-  //   component: AdminScoringResultPage,
-  //   meta: {
-  //     access: ACCESS_ENUM.ADMIN,
-  //   },
-  // },
+  {
+    path: "/admin/scoring_result",
+    name: "评分管理",
+    component: AdminScoringResultPage,
+    meta: {
+      access: ACCESS_ENUM.ADMIN,
+    },
+  },
   // {
   //   path: "/admin/user_answer",
   //   name: "回答管理",
