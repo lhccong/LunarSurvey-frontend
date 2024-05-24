@@ -29,15 +29,15 @@ export const routes: Array<RouteRecordRaw> = [
     name: "创建应用",
     component: AddAppPage,
   },
-  // {
-  //   path: "/add/app/:id",
-  //   name: "修改应用",
-  //   props: true,
-  //   component: AddAppPage,
-  //   meta: {
-  //     hideInMenu: true,
-  //   },
-  // },
+  {
+    path: "/add/app/:id",
+    name: "修改应用",
+    props: true,
+    component: AddAppPage,
+    meta: {
+      hideInMenu: true,
+    },
+  },
   {
     path: "/add/question/:appId",
     name: "创建题目",
