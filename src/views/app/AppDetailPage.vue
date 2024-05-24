@@ -31,7 +31,9 @@
             </a-space>
           </p>
           <p>
-            创建时间：{{ dayjs(data.createTime).format("YYYY-MM-DD HH:mm:ss") }}
+            创建时间：{{
+              dayjs(data.createTime as any).format("YYYY-MM-DD HH:mm:ss")
+            }}
           </p>
           <a-space size="medium">
             <a-button type="primary" :href="`/answer/do/${id}`"

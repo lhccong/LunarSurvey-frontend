@@ -38,24 +38,24 @@ export const routes: Array<RouteRecordRaw> = [
   //     hideInMenu: true,
   //   },
   // },
-  // {
-  //   path: "/add/question/:appId",
-  //   name: "创建题目",
-  //   component: AddQuestionPage,
-  //   props: true,
-  //   meta: {
-  //     hideInMenu: true,
-  //   },
-  // },
-  // {
-  //   path: "/add/scoring_result/:appId",
-  //   name: "创建评分",
-  //   component: AddScoringResultPage,
-  //   props: true,
-  //   meta: {
-  //     hideInMenu: true,
-  //   },
-  // },
+  {
+    path: "/add/question/:appId",
+    name: "创建题目",
+    component: AddQuestionPage,
+    props: true,
+    meta: {
+      hideInMenu: true,
+    },
+  },
+  {
+    path: "/add/scoring_result/:appId",
+    name: "创建评分",
+    component: AddScoringResultPage,
+    props: true,
+    meta: {
+      hideInMenu: true,
+    },
+  },
   {
     path: "/app/detail/:id",
     name: "应用详情页",
