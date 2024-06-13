@@ -85,14 +85,14 @@ export const routes: Array<RouteRecordRaw> = [
       access: ACCESS_ENUM.USER,
     },
   },
-  // {
-  //   path: "/answer/my",
-  //   name: "我的答题",
-  //   component: MyAnswerPage,
-  //   meta: {
-  //     access: ACCESS_ENUM.USER,
-  //   },
-  // },
+  {
+    path: "/answer/my",
+    name: "我的答题",
+    component: MyAnswerPage,
+    meta: {
+      access: ACCESS_ENUM.USER,
+    },
+  },
   {
     path: "/admin/user",
     name: "用户管理",
