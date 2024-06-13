@@ -16,11 +16,11 @@
           <a-button @click="addQuestion(questionContent.length)">
             底部添加题目
           </a-button>
-          <!--          &lt;!&ndash; AI 生成抽屉 &ndash;&gt;-->
-          <!--          <AiGenerateQuestionDrawer-->
-          <!--            :appId="appId"-->
-          <!--            :onSuccess="onAiGenerateSuccess"-->
-          <!--          />-->
+          <!-- AI 生成抽屉 -->
+          <AiGenerateQuestionDrawer
+            :appId="appId"
+            :onSuccess="onAiGenerateSuccess"
+          />
         </a-space>
         <!-- 遍历每道题目 -->
         <div v-for="(question, index) in questionContent" :key="index">
@@ -45,9 +45,7 @@
             <h4>题目 {{ index + 1 }} 选项列表</h4>
             <a-button
               size="small"
-              @click="
-                addQuestionOption(question, question.options?.length as number)
-              "
+              @click="addQuestionOption(question, question.options.length)"
             >
               底部添加选项
             </a-button>
@@ -112,8 +110,7 @@ import {
   listQuestionVoByPageUsingPost,
 } from "@/api/questionController";
 import message from "@arco-design/web-vue/es/message";
-
-// import AiGenerateQuestionDrawer from "@/views/add/components/AiGenerateQuestionDrawer.vue";
+import AiGenerateQuestionDrawer from "@/views/add/components/AiGenerateQuestionDrawer.vue";
 
 interface Props {
   appId: string;
